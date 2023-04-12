@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+ </head>
+
+ <body>
+  <div class="container">
+    <div class="calculator">
+      
+        <div>
+          <input type="text" class="display-bar" id="js-display">
+        </div>
+        <div class="rows">
+          <button onclick="reset();">AC</button>
+          <button class="doub" onclick="dele();">DE</button>
+          <button class="fnc" onclick="check('/');display('/');">/</button>
+        </div>
+        <div class="rows">
+          <button onclick="display('7'); ">7</button>
+          <button onclick="display('8'); ">8</button>
+          <button onclick="display('9'); ">9</button>
+          <button class="fnc" onclick="check('*'); display('*'); ">*</button>
+        </div>
+        <div class="rows">
+          <button onclick="display('4'); ">4</button>
+          <button onclick="display('5'); ">5</button>
+          <button onclick="display('6'); ">6</button>
+          <button class="fnc" onclick="check('-');display('-'); ">-</button>
+        </div>
+        <div class="rows">
+          <button onclick="display('1'); ">1</button>
+          <button onclick="display('2'); ">2</button>
+          <button onclick="display('3'); ">3</button>
+          <button class="fnc" onclick="check('+');display('+'); ">+</button>
+        </div>
+        <div class="rows">
+          <button class="doub" onclick="display('0'); ">0</button>
+          <button onclick="check('.');display('.'); ">.</button>
+          <button class="fnc" onclick="cal();">=</button>
+        </div>
+      
+    </div>
+   
+  </div>
+
+  <script src="calculator.js"></script>
+ </body>
+</html>
